@@ -1,0 +1,11 @@
+src/
+tests/
+.github/
+coverage/
+vitest.config.ts
+tsconfig.json
+tsup.config.ts
+eslint.config.js
+prettier.config.js
+.gitignore
+.npmignore
