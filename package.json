@@ -15,7 +15,7 @@
     }
   },
   "bin": {
-    "lanka-nic": "./dist/cli.cjs"
+    "lanka-nic": "dist/cli.cjs"
   },
   "sideEffects": false,
   "files": [
@@ -111,6 +111,7 @@
     "@typescript-eslint/eslint-plugin": "^8.35.0",
     "@typescript-eslint/parser": "^8.35.0",
     "@vitest/coverage-v8": "^3.2.4",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "eslint": "^9.28.0",
     "prettier": "^3.5.3",
     "semantic-release": "^24.2.5",
