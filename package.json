@@ -44,12 +44,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aakashlk/lanka-nic.git"
+    "url": "git+https://github.com/Aakashwije/lanka-nic.git"
   },
   "bugs": {
-    "url": "https://github.com/aakashlk/lanka-nic/issues"
+    "url": "https://github.com/Aakashwije/lanka-nic/issues"
   },
-  "homepage": "https://github.com/aakashlk/lanka-nic#readme",
+  "homepage": "https://github.com/Aakashwije/lanka-nic#readme",
   "keywords": [
     "nic",
     "sri-lanka",
