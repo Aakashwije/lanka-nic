@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/Aakashwije/lanka-nic/compare/v1.0.0...v1.0.1) (2026-06-16)
+
+### Bug Fixes
+
+* enable npm publishing in semantic-release ([d039629](https://github.com/Aakashwije/lanka-nic/commit/d039629ab0fb2f17e690a2b0bdadeb11bd1b2e36))
+* publish under owned npm scope ([b821432](https://github.com/Aakashwije/lanka-nic/commit/b821432b337df2cdaefef2f9768a970fffffa11a))
+* verify npm auth in release workflow ([77e3c57](https://github.com/Aakashwije/lanka-nic/commit/77e3c572596dba8e70f8a3ed42e808e47ac967b5))
+
 ## 1.0.0 (2026-06-16)
 
 ### Features
