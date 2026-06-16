@@ -62,6 +62,7 @@
     "id"
   ],
   "release": {
+    "repositoryUrl": "https://github.com/Aakashwije/lanka-nic.git",
     "branches": [
       "main"
     ],
