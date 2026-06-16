@@ -1,10 +1,10 @@
 <div align="center">
 
-# `@lanka/nic`
+# `@aakashwije/lanka-nic`
 
 **Production-grade Sri Lankan NIC validation, parsing, and generation**
 
-[![npm](https://img.shields.io/npm/v/@lanka/nic?color=%230060c7&label=npm&logo=npm&style=flat-square)](https://www.npmjs.com/package/@lanka/nic)
+[![npm](https://img.shields.io/npm/v/@aakashwije/lanka-nic?color=%230060c7&label=npm&logo=npm&style=flat-square)](https://www.npmjs.com/package/@aakashwije/lanka-nic)
 [![CI](https://img.shields.io/github/actions/workflow/status/aakashlk/lanka-nic/ci.yml?branch=main&logo=github-actions&logoColor=white&style=flat-square&label=CI)](https://github.com/aakashlk/lanka-nic/actions)
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?logo=vitest&style=flat-square)](#)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
@@ -38,7 +38,7 @@
 
 ## Overview
 
-`@lanka/nic` is a zero-dependency, fully-typed TypeScript library for working with Sri Lankan **National Identity Card (NIC)** numbers. It handles both the legacy 9-digit format (`YYXXXSSSSV`) and the modern 12-digit format (`YYYYXXXSSSSS`), covering:
+`@aakashwije/lanka-nic` is a zero-dependency, fully-typed TypeScript library for working with Sri Lankan **National Identity Card (NIC)** numbers. It handles both the legacy 9-digit format (`YYXXXSSSSV`) and the modern 12-digit format (`YYYYXXXSSSSS`), covering:
 
 - **Parsing** — extract birth year, birth date, day-of-year, gender
 - **Validation** — format and semantic correctness including leap-year safety
@@ -182,7 +182,7 @@ sequenceDiagram
     actor User
     participant CLI as lanka-nic
     participant Core as runCommand
-    participant Lib as @lanka/nic
+    participant Lib as @aakashwije/lanka-nic
 
     User->>CLI: lanka-nic parse 950012345V
 
@@ -209,13 +209,13 @@ sequenceDiagram
 
 ```bash
 # npm
-npm install @lanka/nic
+npm install @aakashwije/lanka-nic
 
 # pnpm
-pnpm add @lanka/nic
+pnpm add @aakashwije/lanka-nic
 
 # yarn
-yarn add @lanka/nic
+yarn add @aakashwije/lanka-nic
 ```
 
 Requires **Node.js ≥ 18**. Zero runtime dependencies. Dual ESM + CommonJS output.
@@ -225,7 +225,7 @@ Requires **Node.js ≥ 18**. Zero runtime dependencies. Dual ESM + CommonJS outp
 ## Quick Start
 
 ```ts
-import { parseNIC, validateNIC, getAge, maskNIC } from '@lanka/nic';
+import { parseNIC, validateNIC, getAge, maskNIC } from '@aakashwije/lanka-nic';
 
 const nic = '950012345V';
 
@@ -257,7 +257,7 @@ const parsed = parseNIC(nic);
 The primary entry point. Returns a discriminated union — **never throws**. Accepts `unknown` so it is safe to call directly on unvalidated external input.
 
 ```ts
-import { safeParse } from '@lanka/nic';
+import { safeParse } from '@aakashwije/lanka-nic';
 
 const result = safeParse(req.body.nic);
 
@@ -340,7 +340,7 @@ Calculates the person's age as of today (UTC). Pass `opts.now` to fix the refere
 Calculates age as of a specific reference date. Returns `null` if the date precedes the birth date.
 
 ```ts
-import { getAge, getAgeOn } from '@lanka/nic';
+import { getAge, getAgeOn } from '@aakashwije/lanka-nic';
 
 getAge('950012345V');
 // → current age as of today UTC
@@ -384,7 +384,7 @@ equalsNIC('950012345V', '950012346V');  // false (different serial)
 ### Type Guards
 
 ```ts
-import { isValidNIC, isOldNIC, isNewNIC } from '@lanka/nic';
+import { isValidNIC, isOldNIC, isNewNIC } from '@aakashwije/lanka-nic';
 
 isValidNIC('950012345V');    // true  — any valid NIC (narrows to string)
 isOldNIC('950012345V');      // true  — valid old-format NIC
@@ -404,7 +404,7 @@ function process(value: unknown) {
 ### Batch Operations
 
 ```ts
-import { validateBatch, parseBatch } from '@lanka/nic';
+import { validateBatch, parseBatch } from '@aakashwije/lanka-nic';
 
 validateBatch(['950012345V', 'invalid', '199500123456']);
 // [true, false, true]
@@ -422,7 +422,7 @@ parseBatch(['950012345V', 'bad']);
 Generates a syntactically valid NIC for a given birth year, day, gender, and format. Designed for seeding test fixtures.
 
 ```ts
-import { generateNIC } from '@lanka/nic';
+import { generateNIC } from '@aakashwije/lanka-nic';
 
 generateNIC({ year: 1995, dayOfYear: 1, gender: 'male',   format: 'old' });
 // '950011234V'
@@ -449,7 +449,7 @@ generateNIC({ year: 1995, dayOfYear: 1, gender: 'male', format: 'old', serial: 7
 `NICError` extends `Error` with a structured `code` for programmatic branching:
 
 ```ts
-import { NICError, parseNICOrThrow } from '@lanka/nic';
+import { NICError, parseNICOrThrow } from '@aakashwije/lanka-nic';
 
 try {
   parseNICOrThrow('not-a-nic');
@@ -507,9 +507,9 @@ type NICErrorCode =
 The `lanka-nic` CLI is bundled with the package.
 
 ```bash
-npm install -g @lanka/nic
+npm install -g @aakashwije/lanka-nic
 # or one-off
-npx @lanka/nic <command> <nic>
+npx @aakashwije/lanka-nic <command> <nic>
 ```
 
 ### Commands
