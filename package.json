@@ -1,6 +1,6 @@
 {
   "name": "@lanka/nic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "TypeScript validator and parser for Sri Lankan NIC numbers (old and new formats).",
   "license": "MIT",
   "type": "module",

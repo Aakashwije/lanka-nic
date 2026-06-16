@@ -1,3 +1,17 @@
+## 1.0.0 (2026-06-16)
+
+### Features
+
+* initial lanka nic package ([ac97912](https://github.com/Aakashwije/lanka-nic/commit/ac97912bc0acdcfe446f9c6401a8a058c81d6485))
+
+### Bug Fixes
+
+* add conventional commits preset for semantic-release ([ddce03e](https://github.com/Aakashwije/lanka-nic/commit/ddce03ea188f470bb3156798f684dc17ddb7fd62))
+* correct repository metadata for semantic-release ([985235d](https://github.com/Aakashwije/lanka-nic/commit/985235dac9174a81db13de5c32318933f2285445))
+* disable npm publishing in semantic-release to fix CI release job ([23f93b4](https://github.com/Aakashwije/lanka-nic/commit/23f93b419a56ef419f31b01c36d91c1f845805e8))
+* harden release workflow token handling ([1e348b8](https://github.com/Aakashwije/lanka-nic/commit/1e348b8cea175a003ba837f839191cb2fc6186f7))
+* harden semantic-release repo and token env ([af164c9](https://github.com/Aakashwije/lanka-nic/commit/af164c94686d4e1f028cbe8fd097677bc05c9f00))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
