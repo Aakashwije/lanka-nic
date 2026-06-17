@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/Aakashwije/lanka-nic/compare/v1.0.1...v1.0.2) (2026-06-17)
+
+### Bug Fixes
+
+* remove npm provenance to fix 403 publish error in release workflow ([ef90e53](https://github.com/Aakashwije/lanka-nic/commit/ef90e53ca89f089079ef6c2afb061ac06c6c4ed0))
+
 ## [1.0.1](https://github.com/Aakashwije/lanka-nic/compare/v1.0.0...v1.0.1) (2026-06-16)
 
 ### Bug Fixes
