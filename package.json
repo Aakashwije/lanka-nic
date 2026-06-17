@@ -36,7 +36,8 @@
     "lint": "eslint .",
     "format": "prettier . --write",
     "typecheck": "tsc --noEmit",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "publish:local": "npm publish --access public --provenance=false"
   },
   "publishConfig": {
     "access": "public"

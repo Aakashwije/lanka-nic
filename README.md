@@ -32,6 +32,7 @@
 - [API Reference](#api-reference)
 - [CLI](#cli)
 - [Contributing](#contributing)
+- [Publishing](#publishing)
 - [License](#license)
 
 ---
@@ -602,6 +603,26 @@ npm run build       # tsup dual ESM+CJS build
 ```
 
 Commits must follow **Conventional Commits** (`feat:`, `fix:`, `chore:`, `docs:` …). Versioning and changelog are fully automated via `semantic-release`.
+
+---
+
+## Publishing
+
+For local/manual publishing (for example from your machine), use:
+
+```bash
+npm run publish:local
+```
+
+This script publishes with `--provenance=false` to avoid local provenance provider errors.
+
+For CI releases, continue using semantic-release:
+
+```bash
+npm run release
+```
+
+CI provenance remains controlled by your release pipeline and npm token setup.
 
 ---
 
