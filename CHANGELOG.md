@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/Aakashwije/lanka-nic/compare/v1.0.2...v1.0.3) (2026-06-17)
+
+### Bug Fixes
+
+* disable npm publish to resolve 403 2FA enforcement error ([8ffb56e](https://github.com/Aakashwije/lanka-nic/commit/8ffb56ed23d7f3623f1959f12a1b5c63dcdf4361))
+
 ## [1.0.2](https://github.com/Aakashwije/lanka-nic/compare/v1.0.1...v1.0.2) (2026-06-17)
 
 ### Bug Fixes
